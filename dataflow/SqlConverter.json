@@ -27,7 +27,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> DfInput",
 				"DfInput sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"     validateSchema: true,",
 				"     deletable:false,",
 				"     insertable:true,",
 				"     updateable:false,",
