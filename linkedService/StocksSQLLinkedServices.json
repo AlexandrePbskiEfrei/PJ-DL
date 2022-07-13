@@ -1,0 +1,12 @@
+{
+	"name": "StocksSQLLinkedServices",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=stocksqlserver1.database.windows.net;initial catalog=StocksSQL;user id=alexandre.poloubinski@efrei.net",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDU3N0M3QjIxLTUzRjItNDBEMy1BRUM3LUIxOTBENUY5MTI1MV85NjY4MjgyYi0wY2NiLTRjNmQtYmIyNi1hZDBkZjA4ZDI4NDgiDQp9"
+		}
+	}
+}
