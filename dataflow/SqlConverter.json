@@ -1,0 +1,42 @@
+{
+	"name": "SqlConverter",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "MergeOutput",
+						"type": "DatasetReference"
+					},
+					"name": "DfInput"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "StocksSQL",
+						"type": "DatasetReference"
+					},
+					"name": "SqlOutput"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> DfInput",
+				"DfInput sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> SqlOutput"
+			]
+		}
+	}
+}
