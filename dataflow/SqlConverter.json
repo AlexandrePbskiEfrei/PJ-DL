@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "StocksSQLInpu",
+						"referenceName": "StocksSQLInput",
 						"type": "DatasetReference"
 					},
 					"name": "SqlOutput"

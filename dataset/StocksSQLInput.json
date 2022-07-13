@@ -1,5 +1,5 @@
 {
-	"name": "StocksSQLInpu",
+	"name": "StocksSQLInput",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDBStocks",
