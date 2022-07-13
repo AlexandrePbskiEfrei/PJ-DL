@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "MergeOutput",
+						"referenceName": "InputStocksToSQL",
 						"type": "DatasetReference"
 					},
 					"name": "DfInput"
@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "StocksSQL",
+						"referenceName": "StocksSQLInpu",
 						"type": "DatasetReference"
 					},
 					"name": "SqlOutput"
@@ -27,7 +27,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> DfInput",
 				"DfInput sink(allowSchemaDrift: true,",
-				"     validateSchema: true,",
+				"     validateSchema: false,",
 				"     deletable:false,",
 				"     insertable:true,",
 				"     updateable:false,",
