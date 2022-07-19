@@ -1,5 +1,5 @@
 {
-	"name": "MergePipeline",
+	"name": "PJ-DL-Pipeline",
 	"properties": {
 		"activities": [
 			{
